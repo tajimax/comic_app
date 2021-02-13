@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*----- リセット追加 -----*/
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/*----- 共通部分 -----*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: #239b76;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/*モーダル*/
+.login-modal-wrapper,
+.signup-modal-wrapper,
+.identify-modal-wrapper,
+.post-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.modal__form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.modal__form input, .modal__form select, .modal__form label {
+  display: block;
+  width: 320px;
+  margin: 0 auto 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+.tab-wrapper {
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.genre-nav {
+  display: inline-block;
+}
+
+.genre-nav__item {
+  font-size: 1rem;
+  line-height: 60px;
+  height: 100%;
+  color: #65B2F7;
+  display: inline-block;
+  align-items: center;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.genre-nav__item.active {
+  border-bottom: #24B7CE 3px solid;
+}
+
+.tab-nav {
+  width: 100%;
+}
+
+.tab-nav__item {
+  display: inline-block;
+  width: 50%;
+  font-size: 1rem;
+  line-height: 60px;
+  color: #65B2F7;
+  display: inline-block;
+  text-align: center;
+}
+
+.tab-nav__item.active {
+  border-bottom: #24B7CE 3px solid;
+}
+
+.tab-content {
+  width: 100%;
+  display: block;
+}
+
+.tab-content__item {
+  height: 100%;
+  width: 100%;
+}
+
+.tab-content2 {
+  width: 100%;
+  display: block;
+  padding: 40px 40px;
+}
+
+.tab-content2__item {
+  height: 100%;
+  width: 100%;
+}
